@@ -2,10 +2,10 @@
 \alias{initialize}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Initializes the workspace by taking a long format dataset and turning it into a contingency table
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This function is the starting point of the lectometry package. The other functions rely on its output.
 }
 \usage{
 initialize(t, variables, variants, formula)

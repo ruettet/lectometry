@@ -13,7 +13,7 @@ initialize <- function(t, variables, variants, formula){
 
 	# extract the profile information, ie which variants for which variables
 	# this may take a while
-	print("creating profile information")
+	cat("creating profile information\n")
 	variablesIndex <- which(colnames(t) == variables)
 	variantsIndex <- which(colnames(t) == variants)
 
@@ -27,7 +27,7 @@ initialize <- function(t, variables, variants, formula){
 	} 
 
 	# make the contingency table and its data frame according to the formula
-	print("Creating data frame from formula")
+	cat("Creating data frame from formula\n")
 	t.cont <- ftable(formula, data=t)
 	t.cont.df <- as.data.frame(t.cont)
 
@@ -40,7 +40,7 @@ initialize <- function(t, variables, variants, formula){
 	x.fac <- rev(expand.grid(rev(x.rev)))
 
 	# initialize the outputs
-	print("Initialize output")
+	cat("Initialize output\n")
 	raw.frequencies <- list() # contains the raw frequencies per variable
 	rel.frequencies <- list() # contains the relative frequencies per variable
 	# contains the size of the lects (sum of variable frequencies)
@@ -54,7 +54,7 @@ initialize <- function(t, variables, variants, formula){
 
 	# go through the variables and gather the raw frequenties per variable 
 	# across the lects
-	print("Going through the variables, this will take a while")
+	cat("Going through the variables, this will take a while\n")
 
 	i <- 1
 	for (variablename in names(variable.names)){ # variable per variable
@@ -138,7 +138,7 @@ initialize <- function(t, variables, variants, formula){
 		i <- i + 1
 	}
 
-	print("Finalizing output")
+	cat("Finalizing output\n")
 	out = list(data=t,
 			   formula=formula,
 			   all.frequencies=t.cont,

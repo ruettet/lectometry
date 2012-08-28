@@ -1,9 +1,9 @@
 Package: lectometry
 Type: Package
-Title: What the package does (short line)
+Title: An R package to perform lectometry
 Version: 1.0
 Date: 2012-08-28
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Tom Ruette
+Maintainer: tom.ruette@gmail.com
+Description: The R package implements functions that can read in a long format dataset and transform it into a clever frequency contingency table so that it is ready for lectometric distance measurements between the lectal variables.
+License: it is completely open under something academic, need to look into this.
