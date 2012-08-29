@@ -6,6 +6,8 @@ Initializes the workspace by taking a long format dataset and turning it into a 
 }
 \description{
 This function is the starting point of the lectometry package. The other functions rely on its output.
+The function basically takes a long format dataset and turns it into a rich contingency table. At the 
+same time, it also generates useful other data structure.
 }
 \usage{
 initialize(t, variables, variants, formula)
@@ -39,7 +41,7 @@ initialize(t, variables, variants, formula)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Tom Ruette
 }
 \note{
 %%  ~~further notes~~
