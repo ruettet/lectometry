@@ -9,6 +9,8 @@
 ### output of this initialization fase is all the raw and relative frequencies,
 ### sizes of the lectal interactions, etc., everything except the aggregation
 
+# dit is voor kris
+
 initialize <- function(t, variables, variants, formula){
 
 	# extract the profile information, ie which variants for which variables
@@ -48,7 +50,7 @@ initialize <- function(t, variables, variants, formula){
 	fe.pvalues <- list() # contains the fisher exact p values per variable
 	llr.pvalues <- list() # contains the llr p values per variable
 	# contains the variables and their variants
-	variable.names <- fun 
+	variable.names <- fun # let us put the fun in variable.names!
 	names(variable.names) <- levels(t.cont.df[,colnames(t.cont.df)==variables])
 	lect.names <- c() # contains the names of the lectal combinations
 
