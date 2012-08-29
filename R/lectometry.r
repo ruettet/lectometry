@@ -9,8 +9,6 @@
 ### output of this initialization fase is all the raw and relative frequencies,
 ### sizes of the lectal interactions, etc., everything except the aggregation
 
-# dit is voor kris
-
 initialize <- function(t, variables, variants, formula){
 
 	# extract the profile information, ie which variants for which variables
