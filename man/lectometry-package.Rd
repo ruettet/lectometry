@@ -3,12 +3,10 @@
 \alias{lectometry}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+An R implementation of lectometric methodology
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+This package implements a number of lectometric methods so that they can easily be used and applied.
 }
 \details{
 \tabular{ll}{
@@ -22,13 +20,13 @@ License: \tab What license is it under?\cr
 ~~ functions ~~
 }
 \author{
-Who wrote it
+Tom Ruette
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: tom.ruette@gmail.com
 }
 \references{
-~~ Literature or other references for background information ~~
+D. Geeraerts, S. Grondelaers and D. Speelman (1999) Convergentie en divergentie in de Nederlandse woordenschat. Meertens Instituut.
+D. Speelman, S. Grondelaers and D. Geeraerts (2003) Profile-based linguistic uniformity as a generic method for comparing language varieties
 }
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
 ~~ the R documentation directory ~~
