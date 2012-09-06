@@ -11,6 +11,9 @@
 
 initialize <- function(t, variables, variants, formula){
 
+	# make sure that there are no empty levels
+	t <- droplevels(t)
+
 	# extract the profile information, ie which variants for which variables
 	# this may take a while
 	cat("creating profile information\n")
