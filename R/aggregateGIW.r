@@ -33,7 +33,7 @@ aggregateGIW <- function(initialization){
 						d = cbind(d, dc)
 					}
 				}	
-				if (length(d) < 1){
+				if (length(d) > 1){
 					ad = mean(d)
 				}
 				else{
