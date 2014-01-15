@@ -8,7 +8,6 @@
 ### sizes of the lectal interactions, etc., everything except the aggregation
 
 initialize <- function(t, formula){
-
 	# make sure that there are no empty levels
 	t <- droplevels(t)
 
@@ -136,6 +135,10 @@ initialize <- function(t, formula){
 				}
 			}
 			llr.pvalues[[i]] <- pmat
+			
+			# calculate city-block distances [TODO]
+			
+			# calculate euclidean distances [TODO]
 		
 			# fill the outputs
 			raw.frequencies[[i]] <- rawfreqs
